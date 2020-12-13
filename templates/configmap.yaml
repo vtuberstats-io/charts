@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vtuber-meta-list
+data:
+  vtuber-meta-list.json: |-
+    {{- .Files.Get "vtuber-meta-list.json" | nindent 4 -}}
